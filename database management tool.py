@@ -10,7 +10,9 @@ clear_info = 1
 detection = 1
 watch_video = 1
 
-connection = sqlite3.connect('P:\Customer_Care\IQS and Genius\Genius\Special Projects\Trouser Reports\database\survey_data.db')
+#THE SCRIPT WILL NOT WORK WHILE THIS IS STILL A COMMENT
+#The user should have a file location ideally on a shared drive with reliable connections to the team prepared for this absolute address.
+#connection = sqlite3.connect('INSERT DATABASE ABSOLUTE ADDRESS')
 crsr = connection.cursor()
 
 def populate_fields():
@@ -48,9 +50,10 @@ def pull_all_data():
         print(i)
 
 #uncomment this line to pull all data from the parking assistant survey
-pull_all_data()
+#pull_all_data()
 
 #this function is not complete
+#this function may also now be redundant given the spreadsheet export tool
 #this function is designed to take everything in the database and store it to a variable with comma delimiting, it is the first step in creating digestible output.
 '''def extract_data():
     for row in crsr:
