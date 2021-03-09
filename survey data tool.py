@@ -1,4 +1,4 @@
-# a program to pull data from the databases I make for special reporting projects.
+# a program to submit data to the databases I make for special reporting projects.
 
 #import statements
 import sqlite3
@@ -17,7 +17,9 @@ data = 'null'
 def choose_parking_assistant_survey():
     global connection
     global pull_script
-    connection = sqlite3.connect('P:\Customer_Care\IQS and Genius\Genius\Special Projects\Trouser Reports\database\survey_data.db')
+    #THE SCRIPT WILL NOT WORK WHILE THIS IS STILL A COMMENT
+    #The user should supply the absolute address of the data base in question
+    connection = sqlite3.connect('INSERT DATABASE ABSOLUTE ADDRESS')
     pull_script = ('SELECT * FROM parking_assistant_survey')
 
 #a function to pull all the data into a variable
