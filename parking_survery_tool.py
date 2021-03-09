@@ -1,7 +1,5 @@
 #a tool to collect survey style true/false statements from the customers and collect their responses in a database
 
-'James is a konami fanboy bitch'
-
 #library imports
 from tkinter import *
 import sqlite3
@@ -101,7 +99,9 @@ def write_to_database():
     global clear_info
     global detection
     global watch_video
-    connection = sqlite3.connect('P:\Customer_Care\IQS and Genius\Genius\Special Projects\Trouser Reports\database\survey_data.db')
+    #THE SCRIPT WILL NOT WORK WHILE THIS IS STILL A COMMENT
+    #The user should supply the absolute address for the database holding the parking survey data
+    #connection = sqlite3.connect('INSERT DATABASE ABSOLUTE ADDRESS')
     crsr = connection.cursor()
     crsr.execute('INSERT INTO parking_assistant_survey VALUES (?, ?, ?, ?, ?, ?, ?, ?)', (user, chassis, verbatim, activation, selecting, clear_info, detection, watch_video))
     connection.commit()
@@ -171,15 +171,15 @@ lab_Qnum = Label(main, text = 'Q Number')
 lab_Qnum.grid(row=0,column = 2)
 lab_chas = Label(main, text = 'Chassis')
 lab_chas.grid(row=1, column=2)
-lab_acti = Label(main, text = 'Do you have an issue in activating the parking assistant?')
+lab_acti = Label(main, text = 'A true/false question of interest to internal partners')
 lab_acti.grid(row=2, column=2)
-lab_sele = Label(main, text='Do you have an issue in selecting the proposed parking spaces?')
+lab_sele = Label(main, text='A true/false question of interest to internal partners')
 lab_sele.grid(row=3, column=2)
-lab_clea = Label(main, text='Is the parking space information in the central information\n display understandable?')
+lab_clea = Label(main, text='A true/false question of interest to internal partners')
 lab_clea.grid(row=4, column=2)
-lab_dete = Label(main, text='Is the detection of free parking spaces understandable?')
+lab_dete = Label(main, text='A true/false question of interest to internal partners')
 lab_dete.grid(row=5, column=2)
-lab_watc = Label(main, text ='Did you already watch the How-To-Video?')
+lab_watc = Label(main, text ='A true/false question of interest to internal partners')
 lab_watc.grid(row=6, column=2)
 lab_verE = Label(main, text='**Copy and paste call notes**')
 lab_verE.grid(row=7, column=2)
