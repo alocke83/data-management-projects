@@ -10,7 +10,9 @@ data_holder = []
 
 #code to access the database and pull the information ito a variable for use
 
-connection = sqlite3.connect('P:\Customer_Care\IQS and Genius\Genius\Special Projects\Trouser Reports\database\survey_data.db')
+#THE SCRIPT WILL NOT WORK WHILE THIS IS STILL A COMMENT
+#The user should suply the absolute address of the target database
+#connection = sqlite3.connect('INSERT TARGET DATABASE ABSOLUTE ADDRESS')
 crsr = connection.cursor()
 
 def pull_all_data():
